@@ -1,0 +1,317 @@
+:root {
+  --shadow-color: 0deg 0% 63%;
+  --shadow-elevation-high: 0px 0.5px 0.5px hsl(var(--shadow-color) / 0.5),
+    0px 1.7px 1.6px -0.5px hsl(var(--shadow-color) / 0.46),
+    0px 3.4px 3.1px -1.1px hsl(var(--shadow-color) / 0.41),
+    0.1px 6.4px 5.9px -1.6px hsl(var(--shadow-color) / 0.37),
+    0.1px 11.7px 10.8px -2.2px hsl(var(--shadow-color) / 0.32),
+    0.2px 20px 18.5px -2.7px hsl(var(--shadow-color) / 0.28),
+    0.4px 32.3px 29.8px -3.3px hsl(var(--shadow-color) / 0.24),
+    0.6px 49.3px 45.5px -3.8px hsl(var(--shadow-color) / 0.19);
+
+  /* font-family: "Supermercado One", cursive; */
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100vw;
+  height: auto;
+}
+
+nav ul li {
+  display: none;
+}
+
+li,
+a,
+span {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Supermercado One", cursive;
+}
+
+li a:hover {
+  text-shadow: 1px 1px #1944ff;
+  text-decoration: underline;
+}
+
+.hamburger-icon {
+  color: white;
+  font-size: 2.5rem;
+}
+.nav-ul {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 93%;
+  /* background-color: red; */
+  width: 100vw;
+  height: auto;
+  /* margin-top: 1rem; */
+}
+
+/* Main content  */
+
+h1 {
+  font-family: "Supermercado One", cursive;
+  font-size: 2rem;
+}
+
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 100vw;
+  /* position: absolute;
+  bottom: 65%;
+  left: 30%; */
+}
+
+.alertle-logo {
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+
+.logo-div h1 {
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: rgb(75, 75, 75);
+}
+
+.flex {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  background-color: #f682a0;
+}
+
+.main-content-div {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: auto;
+  margin: auto;
+}
+
+.resources {
+  background-color: #008cff;
+  padding: 2rem;
+  border-radius: 3rem;
+}
+/* .left-div {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  flex-basis: auto;
+} */
+
+/* .left-div img {
+  width: 100vw;
+  max-width: 80%;
+  height: auto;
+  border-radius: 15%;
+  border: 0.5rem solid #00e257;
+  /* box-shadow: var(--shadow-elevation-high);
+ } */
+
+.right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  flex-basis: auto;
+}
+
+/* .map-img {
+  margin: auto;
+  width: 60%;
+  height: auto;
+  border-radius: 15%;
+} */
+
+.hide {
+  display: none;
+}
+
+#container {
+  width: 100%;
+}
+#canvas3d {
+  width: 100%;
+  /* margin-top: 1rem; */
+}
+/* fancy button styling */
+.main-button {
+  position: absolute;
+  left: 42%;
+  top: 29%;
+  margin: auto;
+  margin-top: 15rem;
+  cursor: pointer;
+  width: 10em;
+  height: 5rem;
+  font-size: 2rem;
+  border-radius: 5px 20px 5px;
+  /* border-color: #1d67ff; */
+  background: linear-gradient(
+    90deg,
+    rgb(216, 0, 126),
+    #ff633c,
+    #e9ff27 /* #b7ff55, */ /* #d0ff59 */
+  );
+  text-shadow: 1px 1px #1944ff;
+  font-family: "Supermercado One", cursive;
+  box-shadow: var(--shadow-elevation-high);
+}
+
+.btn-2 {
+  color: white;
+}
+.btn-2:hover {
+  animation: stripes-move 0.95s infinite linear;
+  background: repeating-linear-gradient(
+    45deg,
+    #82f6d8 0,
+    #dcfff6 0.25em,
+    transparent 0.25em,
+    transparent 0.5em
+  );
+  color: #3c60ff;
+}
+@keyframes stripes-move {
+  100% {
+    background-position: 5em 0px;
+  }
+}
+
+/* CONTACT PAGE  */
+h3 {
+  font-family: "Supermercado One", cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #7604aa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #13cc1d;
+}
+
+.contact-form {
+  border-radius: 5px;
+  background-color: #ff5edc;
+  padding: 20px;
+  margin: auto;
+  font-family: "Supermercado One", cursive;
+}
+
+/* Footer */
+
+footer {
+  width: 100vw;
+  height: auto;
+}
+.footer-div {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 100;
+  background-color: #097fad;
+  width: 100%;
+  height: auto;
+  margin-top: 12rem;
+}
+/* change footer colors per page */
+.purple {
+  background-color: #ff5edc;
+}
+
+.orange {
+  background-color: #ff7300;
+}
+
+.pink {
+  background-color: #ff6fab;
+}
+
+.blue {
+  background-color: #062dad;
+}
+/* Media Queries  */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  nav ul li {
+    display: inline-block;
+  }
+
+  /* .main-content-div {
+    flex-direction: row;
+  } */
+
+  .alertle-logo {
+    width: 40vw;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+  .main-button {
+    position: absolute;
+    left: 42%;
+    top: 29%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .alertle-logo {
+    width: 30vw;
+  }
+
+  .left-div img {
+    width: 30vw;
+    height: auto;
+  }
+}
