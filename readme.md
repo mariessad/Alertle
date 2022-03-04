@@ -14,8 +14,6 @@ This project is currently in development.
 
 To Visit App:
 
-`localhost:3000/ideas`
-
 ## Reflection
 
 Project created for coding bootcamp CodeSquad. First full-stack web dev project. Focused on a Minimum Viable Product, apps will be demo'd for potential employers and guests at CodeSquad Project Night.
