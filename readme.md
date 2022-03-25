@@ -19,3 +19,5 @@ To Visit App:
 Project created for coding bootcamp CodeSquad. First full-stack web dev project. Focused on a Minimum Viable Product, apps will be demo'd for potential employers and guests at CodeSquad Project Night.
 Frontend: HTML CSS JavaScript
 Backend : NodeJS Express EJS MongoDB Heroku
+3-D art elements created with Spline
+Royalty free images from Unsplash

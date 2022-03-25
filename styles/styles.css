@@ -9,7 +9,7 @@
     0.4px 32.3px 29.8px -3.3px hsl(var(--shadow-color) / 0.24),
     0.6px 49.3px 45.5px -3.8px hsl(var(--shadow-color) / 0.19);
 
-  /* font-family: "Supermercado One", cursive; */
+  --font: "Supermercado One", cursive;
 }
 
 * {
@@ -33,7 +33,7 @@ span {
   color: white;
   text-decoration: none;
   font-size: 2rem;
-  font-family: "Supermercado One", cursive;
+  font-family: var(--font);
 }
 
 li a:hover {
@@ -59,8 +59,9 @@ li a:hover {
 /* Main content  */
 
 h1 {
-  font-family: "Supermercado One", cursive;
+  font-family: var(--font);
   font-size: 2rem;
+  text-align: center;
 }
 
 .logo-div {
@@ -69,9 +70,6 @@ h1 {
   justify-content: center;
   margin: auto;
   width: 100vw;
-  /* position: absolute;
-  bottom: 65%;
-  left: 30%; */
 }
 
 .alertle-logo {
@@ -103,32 +101,6 @@ h1 {
   height: auto;
   margin: auto;
 }
-/* alerts page */
-.alerts {
-  background: radial-gradient(#f5bc1f, #fd7b01);
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 3rem;
-  padding: 2rem;
-}
-
-.placeholder {
-  width: 60vw;
-  height: 60vh;
-}
-/* resources page */
-.resources {
-  background: radial-gradient(#1fe4f5, #0166fd);
-  padding: 2rem;
-  border-radius: 3rem;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-}
-
-.subtext {
-  margin: 1rem;
-  font-size: 1rem;
-  color: #001763;
-}
-
 /* .left-div {
   display: flex;
   justify-content: center;
@@ -170,9 +142,10 @@ h1 {
 }
 #canvas3d {
   width: 100%;
-  /* margin-top: 1rem; */
 }
+
 /* fancy button styling */
+
 .main-button {
   position: absolute;
   left: 42%;
@@ -192,7 +165,7 @@ h1 {
     #e9ff27 /* #b7ff55, */ /* #d0ff59 */
   );
   text-shadow: 1px 1px #1944ff;
-  font-family: "Supermercado One", cursive;
+  font-family: var(--font);
   box-shadow: var(--shadow-elevation-high);
 }
 
@@ -216,12 +189,69 @@ h1 {
   }
 }
 
+/* alerts page */
+.alerts {
+  background: radial-gradient(#f5bc1f, #fd7b01);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+.placeholder {
+  width: 60vw;
+  height: 60vh;
+}
+
+/* About page */
+
+.self-pic {
+  max-width: 15rem;
+  height: auto;
+  border-radius: 3rem;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  margin: auto;
+}
+
+.about {
+  background: radial-gradient(#ffb3c7, #ff028d);
+  padding: 2rem;
+  border-radius: 3rem;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  font-family: var(--font);
+  font-size: larger;
+}
+
+.about a {
+  font-size: large;
+}
+
+/* resources page */
+
+.resources {
+  background: radial-gradient(#1fe4f5, #0166fd);
+  padding: 2rem;
+  border-radius: 3rem;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.subtext {
+  margin: 1rem;
+  font-size: 1rem;
+  color: #001763;
+}
+
+.resources a:hover {
+  color: #13cc1d;
+}
+
 /* CONTACT PAGE  */
+
 h3 {
-  font-family: "Supermercado One", cursive;
+  font-family: var(--font);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 input[type="text"],
 select,
 textarea {
@@ -250,13 +280,39 @@ input[type="submit"]:hover {
   background-color: #13cc1d;
 }
 
+.contact-p {
+  color: white;
+}
+
 .contact-form {
   border-radius: 5px;
   background: radial-gradient(#ff88e5, #ff5edc);
   padding: 20px;
   margin: auto;
-  font-family: "Supermercado One", cursive;
+  font-family: var(--font);
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* LOGIN/SIGNUP  */
+.login-signup-form {
+  border-radius: 5px;
+  background: radial-gradient(#ff922d, #9501c2);
+  padding: 20px;
+  margin: auto;
+  font-family: var(--font);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 /* Footer */
@@ -273,9 +329,11 @@ footer {
   background-color: #097fad;
   width: 100%;
   height: auto;
-  margin-top: 12rem;
+  margin-top: 8rem;
 }
+
 /* change footer colors per page */
+
 .purple {
   background-color: #ff5edc;
 }
@@ -291,6 +349,7 @@ footer {
 .blue {
   background-color: #062dad;
 }
+
 /* Media Queries  */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
