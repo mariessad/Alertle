@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/animals.js" defer></script>
+    <script src="/scripts.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
+    rel="stylesheet"
+  />
     <title>What Wild Animal am I?</title>
   </head>
   <body>
@@ -63,10 +70,11 @@
     <button id="submit">Submit Quiz</button>
     <div id="results"></div>
      -->
-
+<main>
     <div class="main-content-div">
       <div id="header"><h1>Which Wild MA Animal Am I?</h1></div>
       <!-- Q1 -->
+      <div class="question one">
       <form id="form1">
         <p>1.) What is your preferred method of travel?</p>
         <label
@@ -75,10 +83,10 @@
             name="travel"
             id=""
             value="walking"
-          />walking</label
+          /> walking</label
         >
         <label
-          ><input type="radio" name="travel" id="" value="spoon" />flying</label
+          ><input type="radio" name="travel" id="" value="spoon" /> flying</label
         >
         <label
           ><input
@@ -86,7 +94,7 @@
             name="travel"
             id=""
             value="swimming"
-          />swimming</label
+          /> swimming</label
         >
         <label
           ><input
@@ -94,64 +102,71 @@
             name="travel"
             id=""
             value="scurrying"
-          />scurrying</label
+          /> scurrying</label
         >
+      </div>
         <!-- Q2 -->
+        <div class="question two">
         <p>2.) What's your diet like?</p>
         <label
-          ><input type="radio" name="diet" id="" value="garbage" />I like to eat
+          ><input type="radio" name="diet" id="" value="garbage" /> I like to eat
           garbage</label
         >
         <label
-          ><input type="radio" name="diet" id="" value="veg" />Vegetarian/
+          ><input type="radio" name="diet" id="" value="veg" /> Vegetarian/
           vegan</label
         >
         <label
-          ><input type="radio" name="diet" id="" value="meat" />I eat a lot of
+          ><input type="radio" name="diet" id="" value="meat" /> I eat a lot of
           meat</label
         >
         <label
-          ><input type="radio" name="diet" id="" value="whatever" />I'll eat
+          ><input type="radio" name="diet" id="" value="whatever" /> I'll eat
           whatever I can get my hands on that tastes good</label
         >
+        </div>
         <!-- Q3 -->
+        <div class="question three">
         <p>3.) How are your sleeping habits?</p>
         <label
-          ><input type="radio" name="sleep" id="" value="morning" />I'm a
-          morning person, don't stay up too late</label
+          ><input type="radio" name="sleep" id="" value="morning" /> I'm a
+          morning person</label
         >
         <label
-          ><input type="radio" name="sleep" id="" value="night" />I'm a huge
-          night person, thats when I feel most energized</label
+          ><input type="radio" name="sleep" id="" value="night" /> I'm a huge
+          night person</label
         >
         <label
-          ><input type="radio" name="sleep" id="" value="whenever" />It varies,
-          I catch sleep whenever I can</label
+          ><input type="radio" name="sleep" id="" value="whenever" /> Varies,
+          I catch sleep when I can</label
         >
+        </div>
         <!-- Q4 -->
+        <div class="question four">
         <p>4.) How scary do people find you?</p>
         <label
-          ><input type="radio" name="scary" id="" value="very" />Very scary, i'm
+          ><input type="radio" name="scary" id="" value="very" /> Very scary, i'm
           pretty intimdating</label
         >
         <label
-          ><input type="radio" name="scary" id="" value="kinda" />Kinda scary,
+          ><input type="radio" name="scary" id="" value="kinda" /> Kinda scary,
           but I'm mostly harmless</label
         >
         <label
-          ><input type="radio" name="scary" id="" value="annoying" />I'm not so
+          ><input type="radio" name="scary" id="" value="annoying" /> I'm not so
           much scary as I am just annoying</label
         >
         <label
-          ><input type="radio" name="scary" id="" value="not" />Not scary at
+          ><input type="radio" name="scary" id="" value="not" /> Not scary at
           all, not in the slightest</label
         >
-
+        </div>
         <!-- Q5 -->
+        <div class="question five">
         <p>5.) How would you describe your general temperament?</p>
         <label
-          ><input type="radio" name="temper" id="" value="cranky" />Very cranky,
-          don't mess with me unless you want to fight</label
+          ><input type="radio" name="temper" id="" value="cranky" /> Very cranky,
+          don't mess with me</label
         >
         <label
           ><input
@@ -162,14 +177,15 @@
           />grumpy</label
         >
         <label
-          ><input type="radio" name="temper" id="" value="startled" />Easily
+          ><input type="radio" name="temper" id="" value="startled" /> Easily
           startled</label
         >
         <label
-          ><input type="radio" name="temper" id="" value="chill" />Chill, I
-          don't let much bother me</label
+          ><input type="radio" name="temper" id="" value="chill" /> Chill</label
         >
+        </div>
         <!-- Q6 -->
+        <div class="question six">
         <p>6.) What's your favorite season?</p>
         <label
           ><input
@@ -177,7 +193,7 @@
             name="season"
             id=""
             value="spring"
-          />Spring!</label
+          /> Spring!</label
         >
         <label
           ><input
@@ -185,7 +201,7 @@
             name="season"
             id=""
             value="summer"
-          />Summer!</label
+          /> Summer!</label
         >
         <label
           ><input type="radio" name="season" id="" value="fall" />Fall!</label
@@ -196,9 +212,11 @@
             name="season"
             id=""
             value="winter"
-          />Winter!</label
+          /> Winter!</label
         >
+        </div>
         <!-- Q7 -->
+        <div class="question seven">
         <p>7.) Which is your favorite activity?</p>
         <label
           ><input
@@ -206,7 +224,7 @@
             name="activity"
             id=""
             value="sleeping"
-          />Sleeping</label
+          /> Sleeping</label
         >
         <label
           ><input
@@ -214,7 +232,7 @@
             name="activity"
             id=""
             value="scream"
-          />Screaming</label
+          /> Screaming</label
         >
         <label
           ><input
@@ -222,7 +240,7 @@
             name="activity"
             id=""
             value="eating"
-          />Eating</label
+          /> Eating</label
         >
         <label
           ><input
@@ -232,45 +250,51 @@
             value="sneaking"
           />Sneaking</label
         >
+        </div>
         <!-- Q8 -->
+        <div class="question eight">
         <p>8.) PICK A COLOR</p>
         <label
-          ><input type="radio" name="color" id="" value="brown" />brown</label
+          ><input type="radio" name="color" id="" value="brown" /> brown</label
         >
         <label
-          ><input type="radio" name="color" id="" value="green" />green</label
+          ><input type="radio" name="color" id="" value="green" /> green</label
         >
         <label
-          ><input type="radio" name="color" id="" value="white" />white</label
+          ><input type="radio" name="color" id="" value="white" /> white</label
         >
-        <label><input type="radio" name="color" id="" value="red" />red</label>
+        <label><input type="radio" name="color" id="" value="red" /> red</label>
+        </div>
+
         <!-- Q9 -->
+        <div class="question nine">
         <p>9.) How smart are you?</p>
         <label
-          ><input type="radio" name="smart" id="" value="genius" />So smart,
+          ><input type="radio" name="smart" id="" value="genius" /> So smart,
           like genius-level</label
         >
         <label
-          ><input type="radio" name="smart" id="" value="smart" />smart
+          ><input type="radio" name="smart" id="" value="smart" /> smart
           enough</label
         >
         <label
-          ><input type="radio" name="smart" id="" value="average" />average
+          ><input type="radio" name="smart" id="" value="average" /> average
           intellegence</label
         >
         <label
-          ><input type="radio" name="smart" id="" value="dumb" />Dumb. Big
+          ><input type="radio" name="smart" id="" value="dumb" /> Dumb. Big
           stupid. Head empty</label
         >
-
+        </div>
         <!-- Q10 -->
+        <div class="question ten">
         <p>10.) How social are ya?</p>
         <label
-          ><input type="radio" name="social" id="" value="social" />I'm a social
+          ><input type="radio" name="social" id="" value="social" /> I'm a social
           butterfly! Love to be around others</label
         >
         <label
-          ><input type="radio" name="social" id="" value="friends" />I like
+          ><input type="radio" name="social" id="" value="friends" /> I like
           hangin with a small group of close friends best</label
         >
         <label
@@ -278,39 +302,42 @@
           friends, spend a lot of time with my partner</label
         >
         <label
-          ><input type="radio" name="social" id="" value="none" />Loner status,
+          ><input type="radio" name="social" id="" value="none" /> Loner status,
           maybe a partner if I feel like it</label
         >
-        <button class="quiz-button" type="submit" value="Submit">Submit</button>
+        </div>
+        <button class="quiz-button" type="submit" value="Submit"> Submit</button>
       </form>
+    </main>
 
       <p id="response">You got <span id="answer"></span></p>
       <!-- Collection of hidden feedback options to be shown upon submit button -->
-      <div class ="quiz-img" id="bat"><img src="/images/brown-bat.jpg" /></div>
-      <div class ="quiz-img" id="beaver"><img src="/images/beaver.jpg" /></div>
-      <div class ="quiz-img" id="racoon"><img src="/images/raccoon.jpg" /></div>
-      <div class ="quiz-img" id="fox"><img src="/images/red-fox.jpg" /></div>
-      <div class ="quiz-img" id="skunk"><img src="/images/skunk.jpg" /></div>
-      <div class ="quiz-img" id="squirrel"><img src="/images/squirrel.jpg" /></div>
-      <div class ="quiz-img" id="deer"><img src="/images/deer.jpg" /></div>
-      <div class ="quiz-img" id="bunny"><img src="/images/bunny.jpg" /></div>
-      <div class ="quiz-img" id="woodchuck"><img src="/images/woodchuck.jpg" /></div>
-      <div class ="quiz-img" id="eagle"><img src="/images/bald-eagle.jpg" /></div>
-      <div class ="quiz-img" id="seagull"><img src="/images/seagull.jpg" /></div>
-      <div class ="quiz-img" id="owl"><img src="/images/barn-owl.jpg" /></div>
-      <div class ="quiz-img" id="moth"><img src="/images/luna-moth.jpg" /></div>
-      <div class ="quiz-img" id="geese"><img src="/images/geese.jpg" /></div>
-      <div class ="quiz-img" id="turkey"><img src="/images/turkey.jpg" /></div>
-      <div class ="quiz-img" id="butterfly"><img src="/images/monarch-butterfly.jpg" /></div>
-      <div class ="quiz-img" id="coyote"><img src="/images/coyote.jpg" /></div>
-      <div class ="quiz-img" id="dove"><img src="/images/dove.jpg" /></div>
-      <div class ="quiz-img" id="swan"><img src="/images/swan.jpg" /></div>
-      <div class ="quiz-img" id="mouse"><img src="/images/mouse.jpg"/> </div>
-      <div class ="quiz-img" id="snapper"><img src="/images/snapping-turtle.jpg"/> </div>
-      <div class ="quiz-img" id="turtle"><img src="/images/turtle.jpg"/> </div>
-      <div class ="quiz-img" id="snake"><img src="/images/snake.jpg"/> </div>
-      <div class ="quiz-img" id="salamander"><img src="/images/salamander.jpg"/> </div>
-      <div class ="quiz-img" id="frog"><img src="/images/frog.jpg"/> </div>
+      <div class ="quiz-img hide" id="bat"><img src="/images/brown-bat.jpg" /></div>
+      <div class ="quiz-img hide" id="beaver"><img src="/images/beaver.jpg" /></div>
+      <div class ="quiz-img hide" id="raccoon"><img src="/images/raccoon.jpg" /></div>
+      <div class ="quiz-img hide" id="fox"><img src="/images/red-fox.jpg" /></div>
+      <div class ="quiz-img hide" id="skunk"><img src="/images/skunk.jpg" /></div>
+      <div class ="quiz-img hide" id="squirrel"><img src="/images/squirrel.jpg" /></div>
+      <div class ="quiz-img hide" id="deer"><img src="/images/deer.jpg" /></div>
+      <div class ="quiz-img hide" id="bunny"><img src="/images/bunny.jpg" /></div>
+      <div class ="quiz-img hide" id="woodchuck"><img src="/images/woodchuck.jpg" /></div>
+      <div class ="quiz-img hide" id="eagle"><img src="/images/bald-eagle.jpg" /></div>
+      <div class ="quiz-img hide" id="seagull"><img src="/images/seagull.jpg" /></div>
+      <div class ="quiz-img hide" id="owl"><img src="/images/barn-owl.jpg" /></div>
+      <div class ="quiz-img hide" id="moth"><img src="/images/luna-moth.jpg" /></div>
+      <div class ="quiz-img hide" id="geese"><img src="/images/geese.jpg" /></div>
+      <div class ="quiz-img hide" id="turkey"><img src="/images/turkey.jpg" /></div>
+      <div class ="quiz-img hide" id="butterfly"><img src="/images/monarch-butterfly.jpg" /></div>
+      <div class ="quiz-img hide" id="coyote"><img src="/images/coyote.jpg" /></div>
+      <div class ="quiz-img hide" id="dove"><img src="/images/dove.jpg" /></div>
+      <div class ="quiz-img hide" id="swan"><img src="/images/swan.jpg" /></div>
+      <div class ="quiz-img hide" id="mouse"><img src="/images/mouse.jpg"/> </div>
+      <div class ="quiz-img hide" id="snapper"><img src="/images/snapping-turtle.jpg"/> </div>
+      <div class ="quiz-img hide" id="turtle"><img src="/images/turtle.jpg"/> </div>
+      <div class ="quiz-img hide" id="snake"><img src="/images/snake.jpg"/> </div>
+      <div class ="quiz-img hide" id="salamander"><img src="/images/salamander.jpg"/> </div>
+      <div class ="quiz-img hide" id="frog"><img src="/images/frog.jpg"/> </div>
+    <!-- </span></p> -->
     </div>
   </body>
 </html>

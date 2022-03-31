@@ -1,9 +1,4 @@
-// what animals could a person be -
-//Bat, Beaver, racoon, fox, skunk, squirrel, white-tail deer, bunny, woodchuck, bald eagle, seagull, owl, moth, canada geese, turkey, woodpecker, butterfly, coyote, mourning dove, swan, mouse
-// assign each answer a point value in a category, add those up and store that somewhere. Maybe divide animals up in categories
-//ok maybe make a variable for each animal, store all the points in each one depending on the question, and then whatever one has the highest number wins!
-// so, for each answer a number will be added into certain animal variables. At the end, whichever variable has the higest number is the animal that is chosen + then displayed to the page.
-
+// animal quiz page JS
 document.getElementById("form1").onsubmit = function () {
   //displays the response DOM element
   document.getElementById("response").style.display = "block";
@@ -375,8 +370,6 @@ document.getElementById("form1").onsubmit = function () {
     }
   }
 
-  // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
-
   //call function for each question
   eachscore(eval("travel"));
   eachscore(eval("diet"));
@@ -419,42 +412,212 @@ document.getElementById("form1").onsubmit = function () {
 
   //get the max score  in the array
   maxscore = Math.max.apply(Math, all);
+  console.log(maxscore);
 
+  function showBat() {
+    let batElement = document.getElementById("bat");
+    console.log("bat");
+    batElement.className = "quiz-img";
+  }
+  function showBeaver() {
+    console.log("beaver");
+    document.getElementById("beaver").className = "quiz-img";
+  }
+  function showRaccoon() {
+    console.log("raccoon");
+    document.getElementById("raccoon").className = "quiz-img";
+  }
+  function showFox() {
+    console.log("fox");
+    document.getElementById("fox").className = "quiz-img";
+  }
+  function showSkunk() {
+    console.log("skunk");
+    document.getElementById("skunk").className = "quiz-img";
+  }
+  function showSquirrel() {
+    console.log("squirrel");
+    document.getElementById("squirrel").className = "quiz-img";
+  }
+  function showDeer() {
+    console.log("deer");
+    document.getElementById("deer").className = "quiz-img";
+  }
+  function showBunny() {
+    console.log("bunny");
+    document.getElementById("bunny").className = "quiz-img";
+  }
+  function showWoodchuck() {
+    document.getElementById("woodchuck").className = "quiz-img";
+  }
+  function showEagle() {
+    document.getElementById("eagle").className = "quiz-img";
+  }
+  function showSeagull() {
+    document.getElementById("seagull").className = "quiz-img";
+  }
+  function showOwl() {
+    document.getElementById("owl").className = "quiz-img";
+  }
+  function showMoth() {
+    document.getElementById("moth").className = "quiz-img";
+  }
+  function showGeese() {
+    document.getElementById("geese").className = "quiz-img";
+  }
+  function showTurkey() {
+    document.getElementById("turkey").className = "quiz-img";
+  }
+  function showButterfly() {
+    document.getElementById("butterfly").className = "quiz-img";
+  }
+  function showCoyote() {
+    document.getElementById("coyote").className = "quiz-img";
+  }
+  function showDove() {
+    document.getElementById("dove").className = "quiz-img";
+  }
+  function showSwan() {
+    document.getElementById("swan").className = "quiz-img";
+  }
+  function showMouse() {
+    document.getElementById("mouse").className = "quiz-img";
+  }
+  function showSnapper() {
+    document.getElementById("snapper").className = "quiz-img";
+  }
+  function showTurtle() {
+    document.getElementById("turtle").className = "quiz-img";
+  }
+  function showSnake() {
+    document.getElementById("snake").className = "quiz-img";
+  }
+  function showSalamander() {
+    document.getElementById("salamander").className = "quiz-img";
+  }
+  function showFrog() {
+    document.getElementById("frog").className = "quiz-img";
+  }
   // object holding scores and feedback
   scores = [
-    { index: 0, feedback: "Little Brown Bat" },
-    { index: 1, feedback: "beaver" },
-    { index: 2, feedback: "raccoon" },
-    { index: 3, feedback: "red fox" },
-    { index: 4, feedback: "skunk" },
-    { index: 5, feedback: "squirrel" },
-    { index: 6, feedback: "deer" },
-    { index: 7, feedback: "bunny" },
-    { index: 8, feedback: "woodchuck" },
-    { index: 9, feedback: "bald eagle" },
-    { index: 10, feedback: "seagull" },
-    { index: 11, feedback: "barn owl" },
-    { index: 12, feedback: "luna moth" },
-    { index: 13, feedback: "geese" },
-    { index: 14, feedback: "turkey" },
-    { index: 15, feedback: "monarch butterfly" },
-    { index: 16, feedback: "coyote" },
-    { index: 17, feedback: "mourning dove" },
-    { index: 18, feedback: "swan" },
-    { index: 19, feedback: "field mouse" },
-    { index: 20, feedback: "snapper" },
-    { index: 21, feedback: "turtle" },
-    { index: 22, feedback: "snake" },
-    { index: 23, feedback: "salamander" },
-    { index: 24, feedback: "frog" },
+    {
+      index: 0,
+      feedback: showBat(),
+    },
+    {
+      index: 1,
+      feedback: showBeaver(),
+    },
+    {
+      index: 2,
+      feedback: showRaccoon(),
+    },
+    {
+      index: 3,
+      feedback: showFox(),
+    },
+    {
+      index: 4,
+      feedback: showSkunk(),
+    },
+    {
+      index: 5,
+      feedback: showSquirrel(),
+    },
+    {
+      index: 6,
+      feedback: showDeer(),
+    },
+    {
+      index: 7,
+      feedback: showBunny(),
+    },
+    {
+      index: 8,
+      feedback: showWoodchuck(),
+    },
+    {
+      index: 9,
+      feedback: showEagle(),
+    },
+    {
+      index: 10,
+      feedback: showSeagull(),
+    },
+    {
+      index: 11,
+      feedback: showOwl(),
+    },
+    {
+      index: 12,
+      feedback: showMoth(),
+    },
+    {
+      index: 13,
+      feedback: showGeese(),
+    },
+    {
+      index: 14,
+      feedback: showTurkey(),
+    },
+    {
+      index: 15,
+      feedback: showButterfly(),
+    },
+    {
+      index: 16,
+      feedback: showCoyote(),
+    },
+    {
+      index: 17,
+      feedback: showDove(),
+    },
+    {
+      index: 18,
+      feedback: showSwan(),
+    },
+    {
+      index: 19,
+      feedback: showMouse(),
+    },
+    {
+      index: 20,
+      feedback: showSnapper(),
+    },
+    {
+      index: 21,
+      feedback: showTurtle(),
+    },
+    {
+      index: 22,
+      feedback: showSnake(),
+    },
+    {
+      index: 23,
+      feedback: showSalamander(),
+    },
+    {
+      index: 24,
+      feedback: showFrog(),
+    },
   ];
+  // let answerChildren = document.querySelector("#response").children;
+  // let innerAnswerChildren = answerChildren.item(0);
+
+  // console.log(answerChildren);
+  // console.log(innerAnswerChildren);
+
+  // get list of divs with animals inside
+  let quizImg = document.getElementsByClassName("quiz-img");
+  console.log(quizImg);
 
   //figure out which index # holds the max score
   for (i = 0; i < all.length; i++) {
     if (all[i] == maxscore) {
       //this gets one answer, the last one it encounters with a match
       document.getElementById("answer").innerHTML = scores[i].feedback;
-
+      // console.log(scores[i].feedback);
+      // document.getElementById(quizImg[i]]).innerHTML = scores[i].feedback;
       //this version would allow for appending multiple answers; replace statement above
       //document.getElementById("answer").innerHTML += scores[i].feedback + "; ";
     }

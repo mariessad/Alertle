@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <script src="/runtime.js"></script>
+    <script src="/scripts.js" defer></script>
     <link rel="preload" href="./scene.json" as="fetch" />
     <link
       rel="icon"
@@ -51,6 +52,7 @@
             fill="#00e152"
           ></path>
         </svg>
+        <div class="hamburger-icon"><i class="fas fa-bars"></i></div>
         <ul class="nav-ul">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/alerts.html">Alerts</a></li>
@@ -58,7 +60,7 @@
           <li><a href="/resources.html">Resources</a></li>
           <li><a href="/contact.html">Contact</a></li>
           <li><a href="/login.html">Login/Signup</a></li>
-          <div class="hamburger-icon"><i class="fas fa-bars"></i></div>
+          <!-- <div class="hamburger-icon"><i class="fas fa-bars"></i></div> -->
         </ul>
       </nav>
       <!--Logo img-->
@@ -71,12 +73,16 @@
     <main>
       <div>
         <div class="right-div">
-          <button class="main-button btn-2">
-            Sign up/ Login <i class="fas fa-angle-right"></i>
-          </button>
+          <a href="/login.html"
+            ><button class="main-button btn-2">
+              Sign up/ Login <i class="fas fa-angle-right"></i></button
+          ></a>
           <!-- <img class="map-img" src="/styles/greater-boston-map.jpg" /> -->
           <!--3d Alertle animation-->
           <div id="container">
+            <!-- jpg img to show on smaller screens -->
+            <img class="mobile-alertle" src="/images/alertle-mobile.jpg" />
+            <!-- 3d render to show on larger screens -->
             <canvas id="canvas3d"></canvas>
             <a class="spline-watermark hide" href="https://spline.design">
               <img
@@ -118,10 +124,10 @@
       app.load("./scene.json");
     </script>
     <!-- Canvas resize script for reponsive -->
-    <script>
+    <!-- <script>
       var canvas = document.getElementById("canvas3d");
       var heightRatio = 1.5;
       canvas.height = canvas.width * heightRatio;
-    </script>
+    </script> -->
   </body>
 </html>
