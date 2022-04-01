@@ -21,3 +21,4 @@ Frontend: HTML CSS JavaScript
 Backend : NodeJS Express EJS MongoDB Heroku
 3-D art elements created with Spline
 Royalty free images from Unsplash
+additional editing/creation of images/graphics done with Adobe Photoshop and Affinity Designer.

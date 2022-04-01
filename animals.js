@@ -79,6 +79,8 @@ document.getElementById("form1").onsubmit = function () {
       turtle = turtle + 2;
       frog = frog + 1;
       beaver = beaver + 2;
+      //subtract
+      owl = owl - 1;
     }
     if (x == "scurrying") {
       mouse = mouse + 1;
@@ -105,6 +107,13 @@ document.getElementById("form1").onsubmit = function () {
       turtle = turtle + 1;
       woodchuck = woodchuck + 1;
       beaver = beaver + 1;
+      //subtract
+      fox = fox - 1;
+      seagull = seagull - 1;
+      eagle = eagle - 1;
+      coyote = coyote - 1;
+      snake = snake - 1;
+      owl = owl - 1;
     }
     if (x == "meat") {
       fox = fox + 2;
@@ -113,6 +122,12 @@ document.getElementById("form1").onsubmit = function () {
       coyote = coyote + 2;
       snake = snake + 2;
       owl = owl + 2;
+      snapper = snapper + 1;
+      //subtract
+      bunny = bunny - 1;
+      moth = moth - 1;
+      butterfly = butterfly - 1;
+      turtle = turtle - 1;
     }
     if (x == "whatever") {
       deer = deer + 2;
@@ -127,6 +142,9 @@ document.getElementById("form1").onsubmit = function () {
       butterfly = butterfly + 1;
       turkey = turkey + 1;
       swan = swan + 1;
+      //subtract
+      owl = owl - 1;
+      bat = bat - 1;
     }
     if (x == "night") {
       moth = moth + 1;
@@ -147,6 +165,12 @@ document.getElementById("form1").onsubmit = function () {
       snapper = snapper + 1;
       coyote = coyote + 1;
       snake = snake + 1;
+      //subtract
+      bunny = bunny - 1;
+      deer = deer - 1;
+      frog = frog - 1;
+      salamander = salamander - 1;
+      dove = dove - 1;
     }
     if (x == "kinda") {
       bat = bat + 1;
@@ -174,12 +198,19 @@ document.getElementById("form1").onsubmit = function () {
       salamander = salamander + 1;
       swan = swan + 1;
       woodchuck = woodchuck + 1;
+      //subtract
+      skunk = skunk - 1;
+      snake = snake - 1;
+      snapper = snapper - 1;
     }
     // Q5 options
     if (x == "cranky") {
       snapper = snapper + 2;
       beaver = beaver + 1;
       geese = geese + 2;
+      //subtract
+      squirrel = squirrel - 1;
+      raccoon = raccoon - 1;
     }
     if (x == "grumpy") {
       seagull = seagull + 1;
@@ -205,6 +236,10 @@ document.getElementById("form1").onsubmit = function () {
       beaver = beaver + 1;
       salamander = salamander + 2;
       swan = swan + 1;
+      //subtract
+      geese = geese - 1;
+      seagull = seagull - 1;
+      raccoon = raccoon - 1;
     }
     //Q6
     if (x == "spring") {
@@ -236,6 +271,11 @@ document.getElementById("form1").onsubmit = function () {
       fox = fox + 1;
       coyote = coyote + 1;
       dove = dove + 1;
+      //subtract
+      moth = moth - 1;
+      turtle = turtle - 1;
+      frog = frog - 1;
+      salamander = salamander - 1;
     }
     // Q7
     if (x == "sleeping") {
@@ -270,6 +310,9 @@ document.getElementById("form1").onsubmit = function () {
       deer = deer + 1;
       fox = fox + 1;
       owl = owl + 2;
+      mouse = mouse + 1;
+      //subtract
+      seagull = seagull - 1;
     }
     // Q8
     if (x == "brown") {
@@ -291,6 +334,8 @@ document.getElementById("form1").onsubmit = function () {
       turtle = turtle + 1;
       snapper = snapper + 1;
       geese = geese + 1;
+      //subtract
+      bat = bat - 1;
     }
     if (x == "white") {
       swan = swan + 1;
@@ -298,27 +343,38 @@ document.getElementById("form1").onsubmit = function () {
       seagull = seagull + 1;
       coyote = coyote + 1;
       skunk = skunk + 1;
+      //subtract
+      snapper = snapper - 1;
     }
     if (x == "red") {
       fox = fox + 1;
       salamander = salamander + 1;
       turkey = turkey + 1;
       butterfly = butterfly + 1;
+      //subtract
+      deer = deer - 1;
     }
     // Q9
     if (x == "genius") {
-      owl = owl + 1;
+      owl = owl + 2;
       bat = bat + 1;
-      butterfly = butterfly + 1;
+      butterfly = butterfly + 2;
+      //subtract
+      squirrel = squirrel - 1;
+      deer = deer - 1;
+      dove = dove - 1;
+      bunny = bunny - 1;
+      salamander = salamander - 1;
     }
     if (x == "smart") {
       fox = fox + 1;
-      seagull = seagull + 1;
       eagle = eagle + 1;
       swan = swan + 1;
       snake = snake + 1;
       coyote = coyote + 1;
       raccoon = raccoon + 1;
+      //subtract
+      deer = deer - 1;
     }
     if (x == "average") {
       mouse = mouse + 1;
@@ -334,12 +390,26 @@ document.getElementById("form1").onsubmit = function () {
       deer = deer + 1;
       salamander = salamander + 1;
       squirrel = squirrel + 1;
+      seagull = seagull + 1;
+      //subtract
+      owl = owl - 1;
+      bat = bat - 1;
+      butterfly = butterfly - 1;
+      fox = fox - 1;
+      eagle = eagle - 1;
     }
     // Q10
     if (x == "social") {
       butterfly = butterfly + 1;
       beaver = beaver + 1;
       mouse = mouse + 1;
+      //subtract
+      fox = fox - 1;
+      salamander = salamander - 1;
+      woodchuck = woodchuck - 1;
+      snake = snake - 1;
+      coyote = coyote - 1;
+      owl = owl - 1;
     }
     if (x == "friends") {
       turtle = turtle + 1;
@@ -414,6 +484,7 @@ document.getElementById("form1").onsubmit = function () {
   maxscore = Math.max.apply(Math, all);
   console.log(maxscore);
 
+  // functions for each animal
   function showBat() {
     let batElement = document.getElementById("bat");
     console.log("bat");
@@ -502,124 +573,165 @@ document.getElementById("form1").onsubmit = function () {
   scores = [
     {
       index: 0,
-      feedback: showBat(),
+      animial: "bat",
+      score: bat,
+      feedback: showBat,
     },
     {
       index: 1,
-      feedback: showBeaver(),
+      animial: "beaver",
+      score: beaver,
+      feedback: showBeaver,
     },
     {
       index: 2,
-      feedback: showRaccoon(),
+      animial: "raccoon",
+      score: raccoon,
+      feedback: showRaccoon,
     },
     {
       index: 3,
-      feedback: showFox(),
+      animial: "fox",
+      score: fox,
+      feedback: showFox,
     },
     {
       index: 4,
-      feedback: showSkunk(),
+      animial: "skunk",
+      score: skunk,
+      feedback: showSkunk,
     },
     {
       index: 5,
-      feedback: showSquirrel(),
+      animial: "squirrel",
+      score: squirrel,
+      feedback: showSquirrel,
     },
     {
       index: 6,
-      feedback: showDeer(),
+      animial: "deer",
+      score: deer,
+      feedback: showDeer,
     },
     {
       index: 7,
-      feedback: showBunny(),
+      animial: "bunny",
+      score: bunny,
+      feedback: showBunny,
     },
     {
       index: 8,
-      feedback: showWoodchuck(),
+      animial: "woodchuck",
+      score: woodchuck,
+      feedback: showWoodchuck,
     },
     {
       index: 9,
-      feedback: showEagle(),
+      animial: "eagle",
+      score: eagle,
+      feedback: showEagle,
     },
     {
       index: 10,
-      feedback: showSeagull(),
+      animial: "seagull",
+      score: seagull,
+      feedback: showSeagull,
     },
     {
       index: 11,
-      feedback: showOwl(),
+      animial: "owl",
+      score: owl,
+      feedback: showOwl,
     },
     {
       index: 12,
-      feedback: showMoth(),
+      animial: "moth",
+      score: moth,
+      feedback: showMoth,
     },
     {
       index: 13,
-      feedback: showGeese(),
+      animial: "geese",
+      score: geese,
+      feedback: showGeese,
     },
     {
       index: 14,
-      feedback: showTurkey(),
+      animial: "turkey",
+      score: turkey,
+      feedback: showTurkey,
     },
     {
       index: 15,
-      feedback: showButterfly(),
+      animial: "butterfly",
+      score: butterfly,
+      feedback: showButterfly,
     },
     {
       index: 16,
-      feedback: showCoyote(),
+      animial: "coyote",
+      score: coyote,
+      feedback: showCoyote,
     },
     {
       index: 17,
-      feedback: showDove(),
+      animial: "dove",
+      score: dove,
+      feedback: showDove,
     },
     {
       index: 18,
-      feedback: showSwan(),
+      animial: "swan",
+      score: swan,
+      feedback: showSwan,
     },
     {
       index: 19,
-      feedback: showMouse(),
+      animial: "mouse",
+      score: mouse,
+      feedback: showMouse,
     },
     {
       index: 20,
-      feedback: showSnapper(),
+      animial: "snapper",
+      score: snapper,
+      feedback: showSnapper,
     },
     {
       index: 21,
-      feedback: showTurtle(),
+      animial: "turtle",
+      score: turtle,
+      feedback: showTurtle,
     },
     {
       index: 22,
-      feedback: showSnake(),
+      animial: "snake",
+      score: snake,
+      feedback: showSnake,
     },
     {
       index: 23,
-      feedback: showSalamander(),
+      animial: "salamander",
+      score: salamander,
+      feedback: showSalamander,
     },
     {
       index: 24,
-      feedback: showFrog(),
+      animial: "frog",
+      score: frog,
+      feedback: showFrog,
     },
   ];
-  // let answerChildren = document.querySelector("#response").children;
-  // let innerAnswerChildren = answerChildren.item(0);
-
-  // console.log(answerChildren);
-  // console.log(innerAnswerChildren);
 
   // get list of divs with animals inside
   let quizImg = document.getElementsByClassName("quiz-img");
-  console.log(quizImg);
+  // console.log(quizImg);
 
   //figure out which index # holds the max score
-  for (i = 0; i < all.length; i++) {
-    if (all[i] == maxscore) {
+  for (let i = 0; i < scores.length; i++) {
+    if (scores[i].score === maxscore) {
       //this gets one answer, the last one it encounters with a match
-      document.getElementById("answer").innerHTML = scores[i].feedback;
-      // console.log(scores[i].feedback);
-      // document.getElementById(quizImg[i]]).innerHTML = scores[i].feedback;
-      //this version would allow for appending multiple answers; replace statement above
-      //document.getElementById("answer").innerHTML += scores[i].feedback + "; ";
+      document.getElementById("answer").innerHTML = scores[i].feedback();
     }
   }
 
