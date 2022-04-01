@@ -52,6 +52,7 @@
             fill="#880091"
           />
         </svg>
+        <div class="hamburger-icon"><i class="fas fa-bars"></i></div>
         <ul class="nav-ul">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/alerts.html">Alerts</a></li>
@@ -65,14 +66,14 @@
       <!--Logo img-->
       <div class="logo-div">
         <img class="alertle-logo" src="/images/alertle-crop.svg" />
-        <h1>Spot. Share. Connect.</h1>
+        <h1>Login/signup</h1>
       </div>
     </header>
     <!--Main content-->
     <main>
       <div class="main-content-div">
-        <div class="login-signup-form">
-          <!-- SIGN UP FORM -->
+        <!-- SIGN UP FORM -->
+        <div class="left-div signup-form">
           <form action="#">
             <h1>Sign Up</h1>
             <br />
@@ -103,13 +104,46 @@
               required
             />
 
+            <!-- <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label> -->
+            <br /><br />
+
+            <input type="submit" value="Sign Up" />
+          </form>
+        </div>
+        <!-- LOGIN FORM -->
+        <div class="right-div login-form">
+          <form action="#">
+            <h1>Login</h1>
+            <br />
+            <p>Welcome back!</p>
+            <br />
+
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+
             <label>
               <input type="checkbox" checked="checked" name="remember" />
               Remember me
             </label>
             <br /><br />
 
-            <input type="submit" value="Sign Up" />
+            <input type="submit" value="Login" />
           </form>
         </div>
       </div>
