@@ -4,7 +4,6 @@ let navUl = document.querySelector(".nav-ul");
 
 function toggleNav() {
   navUl.classList.toggle("open");
-  console.log("WHAT");
 }
 
 hamburgerMenu.addEventListener("click", toggleNav);

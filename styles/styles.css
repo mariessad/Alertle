@@ -48,7 +48,7 @@ li a:hover {
   display: flex;
   justify-content: space-evenly;
   position: absolute;
-  bottom: 93%;
+  bottom: 94%;
   margin: auto;
   width: 100%;
 }
@@ -499,11 +499,24 @@ footer {
     display: none;
   }
   .open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    bottom: 73%;
+    justify-content: space-evenly;
+    position: absolute;
+    background-image: linear-gradient(
+      rgba(0, 201, 90, 0),
+      rgba(0, 194, 74, 0.788)
+    );
+    padding-bottom: 1rem;
+    border-radius: 0 0 1rem 0;
   }
 
   li a {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 3, 160);
   }
   #canvas3d {
     display: none;
