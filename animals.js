@@ -228,6 +228,8 @@ document.getElementById("form1").onsubmit = function () {
       fox = fox + 1;
       snake = snake + 1;
       woodchuck = woodchuck + 1;
+      //subtract
+      raccoon = raccoon - 1;
     }
     if (x == "chill") {
       turtle = turtle + 1;
@@ -395,7 +397,7 @@ document.getElementById("form1").onsubmit = function () {
       owl = owl - 1;
       bat = bat - 1;
       butterfly = butterfly - 1;
-      fox = fox - 1;
+      fox = fox - 2;
       eagle = eagle - 1;
     }
     // Q10
