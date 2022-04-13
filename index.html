@@ -17,7 +17,7 @@
     />
     <script src="runtime.js"></script>
     <script src="scripts.js" defer></script>
-    <link rel="preload" href="./scene.json" as="fetch" />
+    <link rel="preload" href="scene.json" as="fetch" />
     <link
       rel="icon"
       href="https://api.iconify.design/fluent:animal-turtle-28-regular.svg?color=%2300a34f"
@@ -122,7 +122,7 @@
       </div>
     </footer>
     <script type="module">
-      import { Application } from "runtime.js";
+      import { Application } from "./runtime.js";
       const app = new Application();
       app.load("./scene.json");
     </script>
