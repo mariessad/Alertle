@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
-    <script src="/runtime.js"></script>
-    <script src="/scripts.js" defer></script>
+    <script src="runtime.js"></script>
+    <script src="scripts.js" defer></script>
     <link rel="preload" href="./scene.json" as="fetch" />
     <link
       rel="icon"
@@ -58,17 +58,17 @@
         </svg>
         <div class="hamburger-icon"><i class="fas fa-bars"></i></div>
         <ul class="nav-ul">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/alerts.html">Alerts</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/resources.html">Resources</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/login.html">Login/Signup</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="alerts.html">Alerts</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login/Signup</a></li>
         </ul>
       </nav>
       <!--Logo img-->
       <div class="logo-div">
-        <img class="alertle-logo" src="/images/alertle-crop.svg" />
+        <img class="alertle-logo" src="images/alertle-crop.svg" />
         <h1>Spot. Share. Connect.</h1>
       </div>
     </header>
@@ -76,7 +76,7 @@
     <main>
       <div>
         <!-- <div class="flex"> -->
-        <a href="/login.html"
+        <a href="login.html"
           ><button class="main-button btn-2">
             Sign up/ Login <i class="fas fa-angle-right"></i></button
         ></a>
@@ -84,7 +84,7 @@
         <!--3d Alertle animation-->
         <div id="container">
           <!-- jpg img to show on smaller screens -->
-          <img class="mobile-alertle" src="/images/alertle-mobile.jpg" />
+          <img class="mobile-alertle" src="images/alertle-mobile.jpg" />
           <!-- 3d render to show on larger screens -->
           <canvas id="canvas3d"></canvas>
           <a class="spline-watermark hide" href="https://spline.design">
@@ -118,11 +118,11 @@
           ><i class="fab fa-github"></i
         ></a>
         <span><i class="far fa-copyright"></i>2022</span>
-        <a href="/login.html">Login/Signup</a>
+        <a href="login.html">Login/Signup</a>
       </div>
     </footer>
     <script type="module">
-      import { Application } from "./runtime.js";
+      import { Application } from "runtime.js";
       const app = new Application();
       app.load("./scene.json");
     </script>
