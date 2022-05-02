@@ -1,0 +1,23 @@
+{
+  "name": "alertle",
+  "version": "1.0.0",
+  "description": "A full-stack web application used to share nature pictures and info in the greater Boston area! Make social bonds with other nature lovers, discover local spots for viewing beautiful animals. Connecting users with discovered & undiscovered natural beauty all around them. Building with MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "uuid": "^8.3.2",
+    "nodemon": "^2.0.16"
+  }
+}
