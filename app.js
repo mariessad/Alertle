@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, "public"))); // this configures the 
 app.use("/", indexRoutes);
 
 require("./config/connection");
+
 //Routes
 
 //Server
