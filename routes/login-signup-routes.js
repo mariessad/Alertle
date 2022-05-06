@@ -4,5 +4,7 @@ const loginCtrl = require("../controllers/login-signup-controller");
 
 //LOGIN-SIGNUP ROUTES
 
-router.route("/login-signup").get(loginCtrl.loginSignupPage);
+router.route("/").get(loginCtrl.loginSignupPage);
 //what type of routes for login + signup
+
+module.exports = router;

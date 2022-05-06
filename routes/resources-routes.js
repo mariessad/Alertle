@@ -5,3 +5,5 @@ const resourcesCtrl = require("../controllers/resources-controller");
 //RESOURCE ROUTES
 
 router.route("/").get(resourcesCtrl.resources);
+
+module.exports = router;

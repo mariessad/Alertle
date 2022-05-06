@@ -6,8 +6,4 @@ const siteController = require("../controllers/site-controller");
 
 router.route("/").get(siteController.index);
 
-router.route("/alerts").get(alertsController); //decide what routes you need
-
-router.route("/login").get(); //login/signup form, should re-direct to profile page?
-
 module.exports = router;
