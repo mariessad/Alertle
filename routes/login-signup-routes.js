@@ -6,5 +6,5 @@ const loginCtrl = require("../controllers/login-signup-controller");
 
 router.route("/").get(loginCtrl.loginSignupPage).post(loginCtrl.login_post);
 //what type of routes for login + signup
-
+router.route("/signup").post(loginCtrl.signup);
 module.exports = router;
