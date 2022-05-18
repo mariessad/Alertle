@@ -86,8 +86,10 @@
             <label for="email"><b>Email</b></label>
             <input
               type="text"
+              id="username"
               placeholder="Enter Email"
-              name="email"
+              name="username"
+              min="10"
               required
             />
 
@@ -106,14 +108,13 @@
               name="psw-repeat"
               required
             />
-
-            <!-- <label>
-              <input type="checkbox" checked="checked" name="remember" />
-              Remember me
-            </label> -->
             <br /><br />
 
             <input type="submit" value="SignUp" />
+            <!-- Google Oauth Register -->
+            <button>
+              <a href="/auth/google" class="">Register with Google</a>
+            </button>
           </form>
         </div>
         <!-- LOGIN FORM -->
@@ -128,8 +129,8 @@
             <input
               type="text"
               placeholder="Enter Email"
-              name="email"
-              id="email"
+              name="username"
+              id="username"
               required
             />
 
@@ -139,6 +140,7 @@
               placeholder="Enter Password"
               name="password"
               id="password"
+              minlength="10"
               required
             />
 
@@ -147,8 +149,11 @@
               Remember me
             </label>
             <br /><br />
-
             <input type="submit" value="Login" />
+            <button>
+              <!-- Google oauth login -->
+              <a href="/auth/google" class="btn">Login with Google</a>
+            </button>
           </form>
         </div>
       </div>
