@@ -1,4 +1,6 @@
-// const data = require(""); // add the database
+// const User = require("../models/userModel");
+// const passport = require("passport");
+//data
 
 module.exports = {
   index: (request, response) => {

@@ -34,8 +34,6 @@ app.use(indexRoutes);
 
 require("./config/connection");
 
-//Routes
-
 //Server
 app.listen(PORT, () => {
   console.log(`The server is listening on port ${PORT}`);

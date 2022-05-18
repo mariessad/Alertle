@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 //do i need to require dotenv here
 
 mongoose.connect(
