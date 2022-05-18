@@ -48,7 +48,7 @@ module.exports = {
     scope: ["openid", "profile", "email"],
   }),
   google_redirect_get: [
-    passport.authenticate("google", { failureRedirect: "/login" }),
+    passport.authenticate("google", { failureRedirect: "/" }),
     function (request, response) {
       response.redirect("/alerts");
     },
