@@ -1,9 +1,10 @@
 const User = require("../models/userModel");
 const passport = require("passport");
-//data
 
 module.exports = {
-  index: (request, response) => {
-    response.render("pages/index", {});
+  post_get: (request, response) => {
+    response.render("pages/post", {
+      //pass data needed
+    });
   },
 };
