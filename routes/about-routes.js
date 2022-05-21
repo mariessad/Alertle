@@ -6,4 +6,6 @@ const aboutCtrl = require("../controllers/about-controller");
 
 router.route("/").get(aboutCtrl.about);
 
+router.route("/animal-quiz").get(aboutCtrl.animal_quiz);
+
 module.exports = router;
