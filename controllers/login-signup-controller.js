@@ -17,7 +17,7 @@ module.exports = {
         response.redirect("/login-signup");
       } else {
         passport.authenticate("local")(request, response, () => {
-          response.redirect("/alerts");
+          response.redirect("/post");
         });
       }
     });
@@ -35,7 +35,7 @@ module.exports = {
         response.redirect("/login");
       } else {
         passport.authenticate("local")(request, response, () => {
-          response.redirect("/alerts");
+          response.redirect("/post");
         });
       }
     });
@@ -50,7 +50,7 @@ module.exports = {
   google_redirect_get: [
     passport.authenticate("google", { failureRedirect: "/login-signup" }),
     function (request, response) {
-      response.redirect("/alerts");
+      response.redirect("/post");
     },
   ],
 };

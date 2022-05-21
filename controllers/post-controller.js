@@ -19,7 +19,6 @@ module.exports = {
     const data = {
       image: request.body.image,
     };
-
     // upload image here
     cloudinary.uploader.upload(data.image);
     console.log(request.file); // to see what is returned to you
@@ -30,4 +29,5 @@ module.exports = {
       .then((newImage) => response.json(newImage))
       .catch((err) => console.log(err));
   },
+  //   post_image_delete: (request.response)=>{},
 };

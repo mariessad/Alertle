@@ -209,6 +209,18 @@ h1 {
   height: 60vh;
 }
 
+.alerts-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(255, 145, 1);
+  margin-top: 1.2rem;
+}
+
+.alerts-button:hover {
+  background-color: rgb(0, 230, 77);
+}
+
 /* About page */
 
 .self-pic {
@@ -471,6 +483,10 @@ input[type="text"] {
   resize: vertical;
 }
 
+/* Alertle head image */
+.alertle-head {
+  width: 130px;
+}
 /* .animate {
   transition: all 0.1s;
   -webkit-transition: all 0.1s;
