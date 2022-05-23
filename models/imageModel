@@ -4,20 +4,15 @@ const { Schema } = mongoose;
 // const passportLocalMongoose = require("passport-local-mongoose");
 // let GoogleStrategy = require("passport-google-oauth20").Strategy;
 // const findOrCreate = require("mongoose-findorcreate");
-const multer = require("multer");
-const cloudinary = require("cloudinary");
-const cloudinaryStorage = require("multer-storage-cloudinary");
+// const multer = require("multer");
 
 const imageSchema = new Schema({
   name: {
     type: String,
   },
-  desc: {
+  desc: { type: String },
+  cloudinary_id: {
     type: String,
-  },
-  image: {
-    data: Buffer,
-    contentType: String,
   },
 });
 

@@ -1,10 +1,17 @@
 //Require data needed - data to populate the images on this page
-//require the model for this page if needed
+const Image = require("../models/imageModel");
 
 module.exports = {
   alerts: (request, response) => {
-    response.render("pages/alerts", {
-      //add data for image posts in here
+    Image.find({}, (err, items) => {
+      if (err) {
+        console.log(err);
+        response.status(500).send("An error occurred", err);
+      } else {
+        response.render("pages/alerts", {
+          items: items,
+        });
+      }
     });
   },
 };

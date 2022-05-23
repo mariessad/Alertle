@@ -1,9 +1,9 @@
 const User = require("../models/userModel");
+const Image = require("../models/imageModel");
 const passport = require("passport");
 const { response } = require("express");
-const parser = require("multer");
-const cloudinary = require("cloudinary");
-const Image = require("../models/imageModel");
+const cloudinary = require("../utils/cloudinary");
+const upload = require("../utils/multer");
 
 module.exports = {
   post_image_get: (request, response) => {
@@ -15,19 +15,22 @@ module.exports = {
       response.redirect("/login-signup");
     }
   },
-  post_image_post: (request, response) => {
-    const data = {
-      image: request.body.image,
-    };
-    // upload image here
-    cloudinary.uploader.upload(data.image);
-    console.log(request.file); // to see what is returned to you
-    const image = {};
-    image.url = request.file.url;
-    image.id = request.file.public_id;
-    Image.create(image) // save image information in database
-      .then((newImage) => response.json(newImage))
-      .catch((err) => console.log(err));
-  },
-  //   post_image_delete: (request.response)=>{},
+  //   post_image_post: async (request, response) => {
+  //     upload.single("image");
+  //     try {
+  //       const result = await cloudinary.uploader.upload(request.file.path);
+
+  //       //create instance of image
+  //       let image = new Image({
+  //         name: request.body.name,
+  //         cloudinary_id: result.public_id,
+  //       });
+  //       //save image
+  //       await Image.save();
+  //       response.json(result);
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   },
+  //   post_image_delete: (request, response) => {},
 };
