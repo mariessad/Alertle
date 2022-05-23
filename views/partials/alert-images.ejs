@@ -1,4 +1,11 @@
-<% items.forEach(function(image) { %>
+<!-- <=% items.forEach(function(image) { %>
 
-<div><img src="<%=image.desc%>" /></div>
-<div><% }) % /></div>
+<div><img src="<=%=image.desc%>" /></div>
+<div><=% }) % /></div> -->
+
+<% for (let img of items) {%>
+<div>
+  <img src="<%=img.desc %>" />
+</div>
+
+<% } %>
