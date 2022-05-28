@@ -13,22 +13,6 @@ const multer = require("multer");
 
 const fs = require("fs");
 
-// const storage = multer.diskStorage({
-//   destination: (request, file, cb) => {
-//     cb(null, "uploads");
-//   },
-//   filename: (request, file, cb) => {
-//     cb(null, file.fieldname + "-" + Date.now());
-//   },
-// });
-
-// const upload = multer({ storage: storage });
-
-// const imageModel = require("./models/imageModel");
-
-// const cloudinary = require("cloudinary");
-
-// const cloudinaryStorage = require("multer-storage-cloudinary");
 const bodyParser = require("body-parser");
 
 const PORT = process.env.PORT || 3000;

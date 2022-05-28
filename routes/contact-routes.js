@@ -4,6 +4,6 @@ const contactCtrl = require("../controllers/contact-controller");
 
 //CONTACT ROUTES
 
-router.route("/").get(contactCtrl.contact);
+router.route("/").get(contactCtrl.contact).post(contactCtrl.contact_form_post);
 
 module.exports = router;
