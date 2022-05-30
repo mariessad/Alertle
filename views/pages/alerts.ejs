@@ -97,7 +97,14 @@
     </header>
     <!--Main content-->
     <main>
-      <div class="main-content-div alerts">
+      
+        <!-- Buttons -->
+      
+      <!-- Alert image posts -->
+      <h1>Uploaded Images</h1>
+      <a  href="/login-signup"><button class="alerts-button">Login or sign up to post</button></a>
+      <%- include('../partials/alert-images') -%>
+    <div class="main-content-div alerts">
         <!-- <div class="placeholder"><p>Map content</p></div> -->
         <div id="map-container">
           <div id="locations-panel">
@@ -143,12 +150,7 @@
           defer
         ></script>
       </div>
-      <!-- Buttons -->
-      <a  href="/login-signup"><button class="alerts-button">Login or sign up to post</button></a>
-      <!-- Alert image posts -->
-      <h1>Uploaded Images</h1>
-      <%- include('../partials/alert-images') -%>
-    </main>
+      </main>
     <!--footer-->
     <footer>
       <div class="footer-div orange">

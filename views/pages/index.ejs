@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -80,7 +80,6 @@
           ><button class="main-button btn-2">
             Sign up/ Login <i class="fas fa-angle-right"></i></button
         ></a>
-        <!-- <img class="map-img" src="/styles/greater-boston-map.jpg" /> -->
         <!--3d Alertle animation-->
         <div id="container">
           <!-- jpg img to show on smaller screens -->
@@ -122,9 +121,9 @@
       </div>
     </footer>
     <script type="module">
-      import { Application } from "./runtime.js";
+      import { Application } from "/scripts/runtime.js";
       const app = new Application();
-      app.load("./scene.json");
+      app.load("/scripts/scene.json");
     </script>
   </body>
 </html>
