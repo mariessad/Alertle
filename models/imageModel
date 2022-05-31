@@ -1,10 +1,5 @@
 const mongoose = require("mongoose");
-// const passport = require("passport");
 const { Schema } = mongoose;
-// const passportLocalMongoose = require("passport-local-mongoose");
-// let GoogleStrategy = require("passport-google-oauth20").Strategy;
-// const findOrCreate = require("mongoose-findorcreate");
-// const multer = require("multer");
 
 const imageSchema = new Schema({
   name: {
@@ -14,6 +9,8 @@ const imageSchema = new Schema({
   cloudinary_id: {
     type: String,
   },
+  location: { type: String },
+  comment: { type: String },
 });
 
 module.exports = new mongoose.model("Image", imageSchema);

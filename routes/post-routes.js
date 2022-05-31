@@ -7,8 +7,6 @@ const upload = require("../utils/multer");
 
 router.route("/").get(postCtrl.post_image_get);
 
-// router.route("/api/images").post(postCtrl.post_image_post);
-
 router.post(
   "/api/images",
   upload.single("image"),
@@ -21,6 +19,8 @@ router.post(
         name: request.body.name,
         desc: result.secure_url,
         cloudinary_id: result.public_id,
+        location: request.body.location,
+        comment: request.body.comment,
       });
       //save image
       await image.save();
