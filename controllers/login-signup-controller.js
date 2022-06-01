@@ -1,7 +1,5 @@
 const User = require("../models/userModel");
 const passport = require("passport");
-// const bcrypt = require("bcrypt");
-// const saltRounds = 10;
 
 module.exports = {
   loginSignupPage: (request, response) => {
