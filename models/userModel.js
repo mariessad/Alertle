@@ -41,7 +41,8 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/login-signup/auth/google/alerts",
+      callbackURL:
+        "https://alertle.herokuapp.com/login-signup/auth/google/alerts",
     },
     function (accessToken, refreshToken, email, cb) {
       console.log(email);
