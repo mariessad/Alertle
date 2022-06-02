@@ -9,7 +9,7 @@
     "dev": "nodemon app.js"
   },
   "engines": {
-    "node": "16.0.0"
+    "node": "14.15.4"
   },
   "author": "Mariessa",
   "license": "ISC",
