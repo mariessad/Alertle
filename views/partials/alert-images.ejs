@@ -1,13 +1,14 @@
 <% for (let img of items) {%>
-<div class="main-content-div">
-  <div class="alert-image-box">
-    <img class="alert-image" src="<%=img.desc %>" />
-    <p class="alert-title">Location:</p>
-    <p class="alert-text"><%=img.location %></p>
-    <p class="alert-title">About Image:</p>
-    <p class="alert-text"><%=img.comment %></p>
-    <p></p>
-  </div>
+
+<div class="alert-image-box">
+  <p class="alert-title">User Name:</p>
+  <p class="alert-text"><%=img.username %></p>
+  <img class="alert-image" src="<%=img.desc %>" />
+  <p class="alert-title">Location:</p>
+  <p class="alert-text"><%=img.location %></p>
+  <p class="alert-title">About Image:</p>
+  <p class="alert-text"><%=img.comment %></p>
+  <p></p>
 </div>
 
 <% } %>

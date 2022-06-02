@@ -62,6 +62,11 @@ document.getElementById("form1").onsubmit = function () {
       coyote = coyote + 1;
       skunk = skunk + 1;
       turkey = turkey + 1;
+      //subtract
+      moth = moth - 1;
+      eagle = eagle - 1;
+      butterfly = butterfly - 2;
+      seagull = seagull - 1;
     }
     if (x == "flying") {
       bat = bat + 1;
@@ -81,21 +86,26 @@ document.getElementById("form1").onsubmit = function () {
       beaver = beaver + 2;
       //subtract
       owl = owl - 1;
+      bat = bat - 2;
     }
     if (x == "scurrying") {
-      mouse = mouse + 1;
-      squirrel = squirrel + 1;
+      mouse = mouse + 2;
+      squirrel = squirrel + 2;
       bunny = bunny + 1;
       raccoon = raccoon + 1;
       woodchuck = woodchuck + 1;
       snake = snake + 1;
       salamander = salamander + 1;
+      //subtract
+      bat = bat - 2;
     } // Q2 options
     if (x == "garbage") {
       raccoon = raccoon + 2;
       skunk = skunk + 1;
       mouse = mouse + 1;
       squirrel = squirrel + 2;
+      //subtract
+      snapper = snapper - 1;
     }
     if (x == "veg") {
       bunny = bunny + 2;
@@ -103,14 +113,14 @@ document.getElementById("form1").onsubmit = function () {
       butterfly = butterfly + 1;
       dove = dove + 1;
       geese = geese + 1;
-      turkey = turkey + 1;
+      turkey = turkey + 2;
       turtle = turtle + 1;
       woodchuck = woodchuck + 1;
       beaver = beaver + 1;
       //subtract
       fox = fox - 1;
       seagull = seagull - 1;
-      eagle = eagle - 1;
+      eagle = eagle - 2;
       coyote = coyote - 1;
       snake = snake - 1;
       owl = owl - 1;
@@ -125,9 +135,11 @@ document.getElementById("form1").onsubmit = function () {
       snapper = snapper + 1;
       //subtract
       bunny = bunny - 1;
-      moth = moth - 1;
+      moth = moth - 2;
       butterfly = butterfly - 1;
       turtle = turtle - 1;
+      turkey = turkey - 1;
+      skunk = skunk - 1;
     }
     if (x == "whatever") {
       deer = deer + 2;
@@ -153,6 +165,9 @@ document.getElementById("form1").onsubmit = function () {
       bat = bat + 1;
       coyote = coyote + 1;
       mouse = mouse + 1;
+      //subtract
+      geese = geese - 1;
+      turkey = turkey - 2;
     }
     if (x == "whenever") {
       raccoon = raccoon + 1;
@@ -218,6 +233,8 @@ document.getElementById("form1").onsubmit = function () {
       skunk = skunk + 1;
       owl = owl + 1;
       eagle = eagle + 1;
+      //subtract
+      bat = bat - 1;
     }
     if (x == "startled") {
       mouse = mouse + 1;
@@ -295,6 +312,8 @@ document.getElementById("form1").onsubmit = function () {
       frog = frog + 1;
       bat = bat + 2;
       seagull = seagull + 1;
+      //subtract
+      moth = moth - 1;
     }
     if (x == "eating") {
       butterfly = butterfly + 1;
@@ -338,6 +357,7 @@ document.getElementById("form1").onsubmit = function () {
       geese = geese + 1;
       //subtract
       bat = bat - 1;
+      beaver = beaver - 1;
     }
     if (x == "white") {
       swan = swan + 1;
@@ -347,6 +367,7 @@ document.getElementById("form1").onsubmit = function () {
       skunk = skunk + 1;
       //subtract
       snapper = snapper - 1;
+      mouse = mouse - 1;
     }
     if (x == "red") {
       fox = fox + 1;
@@ -367,6 +388,11 @@ document.getElementById("form1").onsubmit = function () {
       dove = dove - 1;
       bunny = bunny - 1;
       salamander = salamander - 1;
+      eagle = eagle - 1;
+      moth = moth - 1;
+      geese = geese - 1;
+      mouse = mouse - 2;
+      turkey = turkey - 1;
     }
     if (x == "smart") {
       fox = fox + 1;
@@ -385,6 +411,9 @@ document.getElementById("form1").onsubmit = function () {
       snapper = snapper + 1;
       beaver = beaver + 1;
       woodchuck = woodchuck + 1;
+      //subtract
+      raccoon = raccoon - 1;
+      seagull = seagull - 2;
     }
     if (x == "dumb") {
       dove = dove + 1;
@@ -405,6 +434,8 @@ document.getElementById("form1").onsubmit = function () {
       butterfly = butterfly + 1;
       beaver = beaver + 1;
       mouse = mouse + 1;
+      bat = bat + 2;
+
       //subtract
       fox = fox - 1;
       salamander = salamander - 1;
@@ -412,6 +443,7 @@ document.getElementById("form1").onsubmit = function () {
       snake = snake - 1;
       coyote = coyote - 1;
       owl = owl - 1;
+      moth = moth - 1;
     }
     if (x == "friends") {
       turtle = turtle + 1;

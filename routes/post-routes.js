@@ -16,6 +16,7 @@ router.post(
 
       //create instance of image
       let image = new Image({
+        username: request.body.username,
         name: request.body.name,
         desc: result.secure_url,
         cloudinary_id: result.public_id,
