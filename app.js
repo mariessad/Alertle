@@ -22,6 +22,7 @@ app.use(morgan("dev"));
 app.use(methodOverride("_method")); //middlewear for bringing in method override. Needs key name to know what to override
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); //didn't see this in homework 12 part one but see it in 3.2 slides
+
 // body-parser
 app.use(
   bodyParser.urlencoded({
