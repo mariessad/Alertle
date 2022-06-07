@@ -76,6 +76,11 @@ document.getElementById("form1").onsubmit = function () {
       moth = moth + 1;
       dove = dove + 2;
       butterfly = butterfly + 1;
+      //subtract
+      frog = frog - 2;
+      deer = deer - 1;
+      turtle = turtle - 1;
+      mouse = mouse - 1;
     }
     if (x == "swimming") {
       snapper = snapper + 1;
@@ -87,6 +92,7 @@ document.getElementById("form1").onsubmit = function () {
       //subtract
       owl = owl - 1;
       bat = bat - 2;
+      fox = fox - 1;
     }
     if (x == "scurrying") {
       mouse = mouse + 2;
@@ -172,6 +178,7 @@ document.getElementById("form1").onsubmit = function () {
       //subtract
       geese = geese - 1;
       turkey = turkey - 2;
+      turtle = turtle - 1;
     }
     if (x == "whenever") {
       raccoon = raccoon + 1;
@@ -192,6 +199,7 @@ document.getElementById("form1").onsubmit = function () {
       dove = dove - 1;
       squirrel = squirrel - 1;
       beaver = beaver - 1;
+      turkey = turkey - 1;
     }
     if (x == "kinda") {
       bat = bat + 1;
@@ -200,6 +208,8 @@ document.getElementById("form1").onsubmit = function () {
       owl = owl + 1;
       eagle = eagle + 1;
       beaver = beaver + 1;
+      //subtract
+      frog = frog - 1;
     }
     if (x == "annoying") {
       raccoon = raccoon + 1;
@@ -241,6 +251,8 @@ document.getElementById("form1").onsubmit = function () {
       eagle = eagle + 1;
       //subtract
       bat = bat - 1;
+      butterfly = butterfly - 1;
+      squirrel = squirrel - 1;
     }
     if (x == "startled") {
       mouse = mouse + 1;
@@ -266,6 +278,7 @@ document.getElementById("form1").onsubmit = function () {
       seagull = seagull - 1;
       raccoon = raccoon - 1;
       snapper = snapper - 1;
+      frog = frog - 1;
     }
     //Q6
     if (x == "spring") {
@@ -313,6 +326,7 @@ document.getElementById("form1").onsubmit = function () {
       moth = moth + 1;
       //subtract
       snake = snake - 1;
+      butterfly = butterfly - 1;
     }
     if (x == "scream") {
       turkey = turkey + 1;
@@ -323,6 +337,8 @@ document.getElementById("form1").onsubmit = function () {
       seagull = seagull + 1;
       //subtract
       moth = moth - 1;
+      butterfly = butterfly - 2;
+      bunny = bunny - 1;
     }
     if (x == "eating") {
       butterfly = butterfly + 1;
@@ -331,6 +347,8 @@ document.getElementById("form1").onsubmit = function () {
       swan = swan + 1;
       raccoon = raccoon + 2;
       woodchuck = woodchuck + 2;
+      //subtract
+      moth = moth - 1;
     }
     if (x == "sneaking") {
       snake = snake + 1;
@@ -367,6 +385,7 @@ document.getElementById("form1").onsubmit = function () {
       //subtract
       bat = bat - 1;
       beaver = beaver - 1;
+      eagle = eagle - 1;
     }
     if (x == "white") {
       swan = swan + 1;
@@ -377,6 +396,9 @@ document.getElementById("form1").onsubmit = function () {
       //subtract
       snapper = snapper - 1;
       mouse = mouse - 1;
+      fox = fox - 1;
+      geese = geese - 1;
+      woodchuck = woodchuck - 1;
     }
     if (x == "red") {
       fox = fox + 1;
@@ -385,6 +407,8 @@ document.getElementById("form1").onsubmit = function () {
       butterfly = butterfly + 1;
       //subtract
       deer = deer - 1;
+      swan = swan - 1;
+      frog = frog - 1;
     }
     // Q9
     if (x == "genius") {
@@ -392,7 +416,7 @@ document.getElementById("form1").onsubmit = function () {
       bat = bat + 1;
       butterfly = butterfly + 2;
       //subtract
-      squirrel = squirrel - 1;
+      squirrel = squirrel - 2;
       deer = deer - 1;
       dove = dove - 1;
       bunny = bunny - 1;
@@ -413,6 +437,7 @@ document.getElementById("form1").onsubmit = function () {
       raccoon = raccoon + 1;
       //subtract
       deer = deer - 1;
+      geese = geese - 1;
     }
     if (x == "average") {
       mouse = mouse + 1;
@@ -433,7 +458,7 @@ document.getElementById("form1").onsubmit = function () {
       squirrel = squirrel + 1;
       seagull = seagull + 1;
       //subtract
-      owl = owl - 1;
+      owl = owl - 2;
       bat = bat - 1;
       butterfly = butterfly - 1;
       fox = fox - 2;
