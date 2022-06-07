@@ -26,7 +26,9 @@ router.post(
       //save image
       await image.save();
       response.redirect("/alerts");
-    } catch (error) {}
+    } catch (error) {
+      return error;
+    }
   }
 );
 

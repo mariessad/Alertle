@@ -473,6 +473,12 @@ label {
   margin: auto;
 }
 
+.animal-text {
+  display: block;
+  font-family: var(--font-2);
+  margin: 2rem;
+}
+
 /* LOGIN/SIGNUP + Image post form  */
 .signup-form {
   border-radius: 5px;

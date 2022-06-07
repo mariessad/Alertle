@@ -106,6 +106,7 @@ document.getElementById("form1").onsubmit = function () {
       squirrel = squirrel + 2;
       //subtract
       snapper = snapper - 1;
+      snake = snake - 1;
     }
     if (x == "veg") {
       bunny = bunny + 2;
@@ -124,6 +125,8 @@ document.getElementById("form1").onsubmit = function () {
       coyote = coyote - 1;
       snake = snake - 1;
       owl = owl - 1;
+      skunk = skunk - 1;
+      bat = bat - 1;
     }
     if (x == "meat") {
       fox = fox + 2;
@@ -157,6 +160,7 @@ document.getElementById("form1").onsubmit = function () {
       //subtract
       owl = owl - 1;
       bat = bat - 1;
+      skunk = skunk - 1;
     }
     if (x == "night") {
       moth = moth + 1;
@@ -181,11 +185,13 @@ document.getElementById("form1").onsubmit = function () {
       coyote = coyote + 1;
       snake = snake + 1;
       //subtract
-      bunny = bunny - 1;
+      bunny = bunny - 2;
       deer = deer - 1;
       frog = frog - 1;
       salamander = salamander - 1;
       dove = dove - 1;
+      squirrel = squirrel - 1;
+      beaver = beaver - 1;
     }
     if (x == "kinda") {
       bat = bat + 1;
@@ -259,11 +265,12 @@ document.getElementById("form1").onsubmit = function () {
       geese = geese - 1;
       seagull = seagull - 1;
       raccoon = raccoon - 1;
+      snapper = snapper - 1;
     }
     //Q6
     if (x == "spring") {
       moth = moth + 2;
-      bunny = bunny + 1;
+      bunny = bunny + 2;
       turtle = turtle + 1;
       frog = frog + 1;
       salamander = salamander + 1;
@@ -304,6 +311,8 @@ document.getElementById("form1").onsubmit = function () {
       dove = dove + 1;
       snapper = snapper + 1;
       moth = moth + 1;
+      //subtract
+      snake = snake - 1;
     }
     if (x == "scream") {
       turkey = turkey + 1;
@@ -393,6 +402,7 @@ document.getElementById("form1").onsubmit = function () {
       geese = geese - 1;
       mouse = mouse - 2;
       turkey = turkey - 1;
+      skunk = skunk - 1;
     }
     if (x == "smart") {
       fox = fox + 1;
@@ -444,6 +454,10 @@ document.getElementById("form1").onsubmit = function () {
       coyote = coyote - 1;
       owl = owl - 1;
       moth = moth - 1;
+      swan = swan - 2;
+      turtle = turtle - 1;
+      snapper = snapper - 1;
+      eagle = eagle - 1;
     }
     if (x == "friends") {
       turtle = turtle + 1;
@@ -471,6 +485,8 @@ document.getElementById("form1").onsubmit = function () {
       snapper = snapper + 1;
       snake = snake + 1;
       fox = fox + 1;
+      //subtract
+      squirrel = squirrel - 1;
     }
   }
 
