@@ -48,6 +48,8 @@
       src="https://kit.fontawesome.com/4a2896f25a.js"
       crossorigin="anonymous"
     ></script>
+    <!-- metadata scraper library -->
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
     <title>ALERTLE</title>
   </head>
   <body>
@@ -176,5 +178,13 @@
         <a href="/login-signup">Login/Signup</a>
       </div>
     </footer>
+    <script>  window.onload = getExif;
+      function getExif() {
+        var img1 = document.getElementById("img1");
+        EXIF.getData(img1, function () {
+          var MetaData = EXIF.getAllTags(this);
+          console.log(JSON.stringify(MetaData, null, "\t"));
+        });
+      }</script>
   </body>
 </html>
